@@ -5,12 +5,12 @@ Summary:	List::Compare - comparing elements of two lists
 Summary(pl):	List::Compare - porównywanie elementów dwóch list
 Name:		perl-List-Compare
 Version:	0.15
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,7 +28,8 @@ dwoma listami.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 #%%{__make} test
 
@@ -43,5 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%{perl_sitelib}/%{pdir}/*.pm
+%{perl_vendorlib}/%{pdir}/*.pm
 %{_mandir}/man3/*
