@@ -4,12 +4,12 @@
 Summary:	List::Compare - comparing elements of two lists
 Summary(pl):	List::Compare - porównywanie elementów dwóch list
 Name:		perl-List-Compare
-Version:	0.16
+Version:	0.2
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e524f89103d5f0d100e522b555a3bf89
+# Source0-md5:	164007e5fc8d74f54397a581757af9ae
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -46,4 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Change* README
 %{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/%{pdir}/*
 %{_mandir}/man3/*
