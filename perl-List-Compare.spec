@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	List
 %define		pnam	Compare
@@ -10,7 +10,8 @@ Summary(pl):	List::Compare - porównywanie elementów dwóch list
 Name:		perl-List-Compare
 Version:	0.27
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f678005b4f3a745ababb252d66ebf7e2
@@ -36,6 +37,7 @@ dwoma listami.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
 %{?with_tests: %{__make} test}
 
 %install
