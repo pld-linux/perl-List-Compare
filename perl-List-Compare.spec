@@ -8,12 +8,12 @@
 Summary:	List::Compare - comparing elements of two lists
 Summary(pl):	List::Compare - porównywanie elementów dwóch list
 Name:		perl-List-Compare
-Version:	0.21
+Version:	0.22
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f55b4bd1db24c8e0c434c4c8193d1f89
+# Source0-md5:	d6ca41369ad5e22c23c96b5b702c5cc0
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
