@@ -27,7 +27,7 @@ two lists at a time.
 
 %description -l pl
 List::Compare jest prost±, obiektowo zorientowan± implementacj±
-popularnego Perlowego kodu, u¿ywanego do okre¶lania relacji pomiêdzy
+popularnego perlowego kodu, u¿ywanego do okre¶lania relacji pomiêdzy
 dwoma listami.
 
 %prep
