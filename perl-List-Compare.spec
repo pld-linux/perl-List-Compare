@@ -1,23 +1,23 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	List
-%define	pnam	Compare
-Summary:	List::Compare -- comparing elements of two lists.
-Summary(pl):	List::Compare -- porównywanie elementów dwóch list.
-Name:		perl-%{pdir}-%{pnam}
-Version:	0.11
+%define		pdir	List
+%define		pnam	Compare
+Summary:	List::Compare - comparing elements of two lists
+Summary(pl):	List::Compare - porównywanie elementów dwóch list
+Name:		perl-List-Compare
+Version:	0.14
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-List::Compare is a simple, object-oriented implementation of very common
-Perl code used to determine interesting relationships between two lists
-at a time.
+List::Compare is a simple, object-oriented implementation of very
+common Perl code used to determine interesting relationships between
+two lists at a time.
 
 %description -l pl
 List::Compare jest prost±, obiektowo zorientowan± implementacj±
