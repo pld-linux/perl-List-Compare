@@ -6,7 +6,7 @@
 %define		pdir	List
 %define		pnam	Compare
 Summary:	List::Compare - comparing elements of two lists
-Summary(pl):	List::Compare - porównywanie elementów dwóch list
+Summary(pl.UTF-8):   List::Compare - porÃ³wnywanie elementÃ³w dwÃ³ch list
 Name:		perl-List-Compare
 Version:	0.31
 Release:	1
@@ -25,9 +25,9 @@ List::Compare is a simple, object-oriented implementation of very
 common Perl code used to determine interesting relationships between
 two lists at a time.
 
-%description -l pl
-List::Compare jest prost±, obiektowo zorientowan± implementacj±
-popularnego perlowego kodu, u¿ywanego do okre¶lania relacji pomiêdzy
+%description -l pl.UTF-8
+List::Compare jest prostÄ…, obiektowo zorientowanÄ… implementacjÄ…
+popularnego perlowego kodu, uÅ¼ywanego do okreÅ›lania relacji pomiÄ™dzy
 dwoma listami.
 
 %prep
