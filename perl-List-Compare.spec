@@ -6,7 +6,7 @@
 %define		pdir	List
 %define		pnam	Compare
 Summary:	List::Compare - comparing elements of two lists
-Summary(pl.UTF-8):   List::Compare - porównywanie elementów dwóch list
+Summary(pl.UTF-8):	List::Compare - porównywanie elementów dwóch list
 Name:		perl-List-Compare
 Version:	0.31
 Release:	1
